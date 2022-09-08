@@ -27,7 +27,7 @@ The following figure shows the overall architecture of **UnifiedEAE**, for more 
 
 Our experiments are conducted on the three widely-used datasets for event argument extraction task: ACE2005, RAMS and WiKiEvents.
 
-​						![image-20220908172001490](ataet.png)	
+![image-20220908172001490](dataset.png)	
 
 
 
