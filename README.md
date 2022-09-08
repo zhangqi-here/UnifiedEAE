@@ -12,7 +12,7 @@ The transfer between different event argument extraction is a challenging task.
 
 Below we show an example to intuitively illustrate these two challenges.
 
-![image-20220908165032822](C:\Users\QiZhang\AppData\Roaming\Typora\typora-user-images\image-20220908165032822.png)
+![image-20220908165032822](example.png)
 
 To deal with the above challenges, we propose a multi-format transfer learning model for EAE via information bottleneck,  denoted as **UnifiedEAE**, which can leverage all event extraction datasets with heterogeneous formats. 
 
@@ -21,7 +21,7 @@ To deal with the above challenges, we propose a multi-format transfer learning m
 
 The following figure shows the overall architecture of **UnifiedEAE**, for more details, please refer to our paper.
 
-![image-20220908171239670](C:\Users\QiZhang\AppData\Roaming\Typora\typora-user-images\image-20220908171239670.png)
+![image-20220908171239670](framework.png)
 
 ## Dataset
 
