@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 from transformers import BartConfig, BartTokenizerFast
 from transformers import AdamW, get_linear_schedule_with_warmup
 import torch
-from .paie import PAIE_VIB_AVG
+from .unifiedeae import UnifiedEAE
 from .single_prompt import BartSingleArg
 from utils import EXTERNAL_TOKENS
 from processors.processor_multiarg import MultiargProcessor
@@ -15,7 +15,7 @@ from processors.processor_multiarg import MultiargProcessor
 
 
 MODEL_CLASSES = {
-    'paie': (BartConfig, PAIE_VIB_AVG, BartTokenizerFast),
+    'unifiedeae': (BartConfig, UnifiedEAE, BartTokenizerFast),
     'base': (BartConfig, BartSingleArg, BartTokenizerFast)
 }
 
