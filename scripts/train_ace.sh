@@ -11,7 +11,7 @@ work_path=exps/rams_VIB_AVG_weight_time/$SEED/$LR
 mkdir -p $work_path
 
 python engine.py \
-    --model_type=paie \
+    --model_type=unifiedeae \
     --dataset_type=ace_wiki \
     --model_name_or_path=facebook/bart-base \
     --role_path=./data/dset_meta/description_ace.csv#./data/dset_meta/description_wikievent.csv#./data/dset_meta/description_rams.csv \
