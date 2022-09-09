@@ -94,7 +94,7 @@ class InputFeatures(object):
                 span_s = list(np.where(v["span_s"])[0])
                 span_e = list(np.where(v["span_e"])[0])
                 self.gt_dict_tok[k] = [(s,e) for (s,e) in zip(span_s, span_e)]
-        elif "paie" in model_type:
+        elif "unifiedeae" in model_type:
             for k,v in self.target_info.items():
                 self.gt_dict_tok[k] = [(s,e) for (s,e) in zip(v["span_s"], v["span_e"])]
         else:
