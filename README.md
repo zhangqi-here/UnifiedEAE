@@ -33,7 +33,21 @@ Our experiments are conducted on the three widely-used datasets for event argume
 
 ## Usage
 
+### Environment
 
+To run our code, please install all the dependency packages by using the following command:
+
+```
+pip install -r requirements.txt
+```
+
+### Run the model
+
+You could simply run UnifiedEAE with following commands:
+
+```
+bash ./scripts/train_ace.sh
+```
 
 ## Citation
 
