@@ -85,7 +85,7 @@ class Evaluator(BaseEvaluator):
 
     
     def convert_batch_to_inputs(self, batch):
-        if self.cfg.model_type=="paie":
+        if self.cfg.model_type=="unifiedeae":
             inputs = {
                 'enc_input_ids':  batch[0].to(self.cfg.device), 
                 'enc_mask_ids':   batch[1].to(self.cfg.device), 
@@ -159,7 +159,7 @@ class Evaluator(BaseEvaluator):
             feature.init_pred()
             feature.set_gt(self.cfg.model_type, self.cfg.dataset_type)
 
-        if self.cfg.model_type == 'paie':
+        if self.cfg.model_type == 'unifiedeae':
             pred_list = []
             for s in range(0, len(self.record_shared["full_start_logit_list"]), self.cfg.infer_batch_size):
                 sub_max_locs, cal_time, mask_time, score_time = get_best_indexes(self.features, self.record_shared["feature_id_list"][s:s+self.cfg.infer_batch_size], \
