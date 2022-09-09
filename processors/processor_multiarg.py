@@ -223,7 +223,7 @@ class MultiargProcessor(DSET_processor):
         self.prompt_query=False
         if self.args.model_type == "base":
             self.arg_query = True
-        elif "paie" in self.args.model_type:
+        elif "unifiedeae" in self.args.model_type:
             self.prompt_query = True
         else:
             raise NotImplementedError(f"Unexpected setting {self.args.model_type}")
