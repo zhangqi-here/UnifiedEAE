@@ -71,7 +71,7 @@ class Trainer(BaseTrainer):
         super().__init__(cfg, data_loader, model, optimizer, scheduler)
 
     def convert_batch_to_inputs(self, batch):
-        if self.cfg.model_type == "paie":
+        if self.cfg.model_type == "unifiedeae":
             inputs = {
                 'enc_input_ids': batch[0].to(self.cfg.device),
                 'enc_mask_ids': batch[1].to(self.cfg.device),
